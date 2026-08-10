@@ -338,7 +338,7 @@ tasks.register("launchAppOnSimulator", Exec::class) {
     description = "Launches the Animeko app on the simulator"
     dependsOn("installDebugOnSimulator")
 
-    commandLine("xcrun", "simctl", "launch", "booted", "org.animeko.animeko")
+    commandLine("xcrun", "simctl", "launch", "booted", "link.rqwq.ranimeko")
 }
 
 // ── 注入版本号到 Info.plist ──
@@ -390,4 +390,3 @@ tasks.matching { it.path == ":app:shared:application:embedAndSignPodAppleFramewo
     dependsOn(patchInfoPlist)
     inputs.file(file("Animeko/Info.plist"))
 }
-

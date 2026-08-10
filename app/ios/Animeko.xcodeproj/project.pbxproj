@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A3B5C1D2E3F4A5B6C7D8E90 /* MediampFFmpegKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3B5C1D2E3F4A5B6C7D8E91 /* MediampFFmpegKit.xcframework */; };
-		0A3B5C1D2E3F4A5B6C7D8E92 /* MediampFFmpegKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3B5C1D2E3F4A5B6C7D8E91 /* MediampFFmpegKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		058557BB273AAA24004C7B11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557BA273AAA24004C7B11 /* Assets.xcassets */; };
 		058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */; };
+		0A3B5C1D2E3F4A5B6C7D8E90 /* Frameworks/MediampFFmpegKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3B5C1D2E3F4A5B6C7D8E91 /* Frameworks/MediampFFmpegKit.xcframework */; };
+		0A3B5C1D2E3F4A5B6C7D8E92 /* Frameworks/MediampFFmpegKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3B5C1D2E3F4A5B6C7D8E91 /* Frameworks/MediampFFmpegKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB032600AC8F00CF470E /* iOSApp.swift */; };
 		6FA72F27919077AAAC1D327A /* Pods_Animeko.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9394AA604B73CA09673A25D5 /* Pods_Animeko.framework */; };
 		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
@@ -23,7 +23,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0A3B5C1D2E3F4A5B6C7D8E92 /* MediampFFmpegKit.xcframework in Embed Frameworks */,
+				0A3B5C1D2E3F4A5B6C7D8E92 /* Frameworks/MediampFFmpegKit.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -31,9 +31,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0A3B5C1D2E3F4A5B6C7D8E91 /* MediampFFmpegKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Frameworks/MediampFFmpegKit.xcframework; sourceTree = SOURCE_ROOT; };
 		058557BA273AAA24004C7B11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0A3B5C1D2E3F4A5B6C7D8E91 /* Frameworks/MediampFFmpegKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Frameworks/MediampFFmpegKit.xcframework; sourceTree = SOURCE_ROOT; };
 		0E62CA675B735DF3B0C16EC1 /* Pods-Animeko.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Animeko.debug.xcconfig"; path = "Target Support Files/Pods-Animeko/Pods-Animeko.debug.xcconfig"; sourceTree = "<group>"; };
 		2152FB032600AC8F00CF470E /* iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSApp.swift; sourceTree = "<group>"; };
 		7555FF7B242A565900829871 /* Animeko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animeko.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,7 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A3B5C1D2E3F4A5B6C7D8E90 /* MediampFFmpegKit.xcframework in Frameworks */,
+				0A3B5C1D2E3F4A5B6C7D8E90 /* Frameworks/MediampFFmpegKit.xcframework in Frameworks */,
 				6FA72F27919077AAAC1D327A /* Pods_Animeko.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,7 +67,7 @@
 		6967FD3DE1F113A1DCC2353C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0A3B5C1D2E3F4A5B6C7D8E91 /* MediampFFmpegKit.xcframework */,
+				0A3B5C1D2E3F4A5B6C7D8E91 /* Frameworks/MediampFFmpegKit.xcframework */,
 				9394AA604B73CA09673A25D5 /* Pods_Animeko.framework */,
 			);
 			name = Frameworks;
@@ -190,9 +190,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Animeko/Pods-Animeko-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Animeko/Pods-Animeko-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -207,9 +211,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Animeko/Pods-Animeko-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Animeko/Pods-Animeko-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -376,9 +384,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"Animeko/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 7P8CLHDH5G;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Animeko/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -386,9 +396,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.animeko.animeko;
+				PRODUCT_BUNDLE_IDENTIFIER = link.rqwq.ranimeko;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "RAnimeko iOS App Store";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -399,9 +410,11 @@
 			baseConfigurationReference = F249EC154975837B7E34C6F8 /* Pods-Animeko.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"Animeko/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 7P8CLHDH5G;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Animeko/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -409,8 +422,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.animeko.animeko;
+				PRODUCT_BUNDLE_IDENTIFIER = link.rqwq.ranimeko;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "RAnimeko iOS App Store";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
